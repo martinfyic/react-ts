@@ -16,7 +16,6 @@
 }
 
 body {
-    margin: 0;
     display: flex;
     place-items: center;
     min-width: 320px;
@@ -27,8 +26,17 @@ h1 {
     font-size: 3.2em;
     line-height: 1.1;
 }
+h2 {
+    font-size: 2.6em;
+    line-height: 1.1;
+}
+h3 {
+    font-size: 1.2em;
+    line-height: 1.1;
+}
 
 button {
+    margin: 5px;
     border-radius: 8px;
     border: 1px solid transparent;
     padding: 0.6em 1.2em;
