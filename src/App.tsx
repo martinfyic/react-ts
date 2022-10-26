@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import { Button } from "./components/Button";
 import { HangImage } from "./components/HangImage";
 import { letters } from "./helpers/letters";
 
@@ -25,9 +26,11 @@ function App() {
 
             <div>
                 {letters.map((letter) => (
-                    <button onClick={() => checkLetter(letter)} key={letter}>
-                        {letter}
-                    </button>
+                    <Button
+                        letter={letter}
+                        checkLetter={checkLetter}
+                        key={letter}
+                    />
                 ))}
             </div>
         </div>
